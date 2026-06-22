@@ -1,11 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="paginaprincipal.css">
+    <title>LucasCeará</title>
 </head>
 <body>
-    <p>Olá</p>
+    <!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- mini jangada -->
+      <polygon points="19,4 30,28 8,28" fill="#1A4A6B" opacity=".15"/>
+      <line x1="19" y1="4" x2="19" y2="30" stroke="#1A4A6B" stroke-width="2"/>
+      <path d="M10 28 Q19 32 28 28" stroke="#C97B3A" stroke-width="2" fill="none"/>
+      <text x="12" y="22" font-family="serif" font-style="italic" font-size="8" fill="#1A4A6B" opacity=".7">F=ma</text>
+    </svg>
+    <div class="nav-logo-text">
+      FísicaCE
+      <span>Prof. Carlos Sena</span>
+    </div>
+  </div>
+ 
+  <ul class="nav-links">
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <li><a href="#" class="nav-btn">Entrar</a></li>
+  </ul>
+</nav>
+ 
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+ 
+  <div class="hero-content">
+    <div class="hero-eyebrow">Física — Ensino Médio · Ceará</div>
+    <h1 class="hero-title">
+      A força que<br>
+      <em>move o mar</em><br>
+      <span class="stroke">move a ciência</span>
+    </h1>
+    <p class="hero-sub">
+      Aulas, atividades e materiais de Física pensados para quem cresceu
+      entre o sertão e o litoral cearense — porque a natureza já ensina.
+    </p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">Ver Aulas ↗</a>
+      <a href="#" class="btn-secondary">Atividades</a>
+    </div>
+  </div>
+ 
+  <!-- Jangada + Fórmulas -->
+  <div class="hero-visual">
+    <div class="jangada-wrapper">
+ 
+      <div class="formula-tag" style="top:10%;left:3%">F = m · a</div>
+      <div class="formula-tag" style="top:30%;right:0%">E = mc²</div>
+      <div class="formula-tag" style="bottom:30%;left:0%">v = λ · f</div>
+      <div class="formula-tag" style="bottom:15%;right:2%">Q = m·c·ΔT</div>
+ 
+      <!-- Jangada SVG principal -->
+      <svg width="480" height="460" viewBox="0 0 480 460" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:1;">
+        <!-- Água / mar ondulado -->
+        <path d="M0 330 Q60 310 120 330 Q180 350 240 330 Q300 310 360 330 Q420 350 480 330 L480 460 L0 460 Z" fill="#D8EEF7" opacity=".6"/>
+        <path d="M0 350 Q60 330 120 350 Q180 370 240 350 Q300 330 360 350 Q420 370 480 350 L480 460 L0 460 Z" fill="#2D7DAB" opacity=".18"/>
+        <!-- Sol (representa energia solar / luz) -->
+        <circle cx="390" cy="80" r="44" fill="#F0C060" opacity=".22"/>
+        <circle cx="390" cy="80" r="28" fill="#F0C060" opacity=".35"/>
+        <!-- Raios do sol -->
+        <g stroke="#F0C060" stroke-width="2" opacity=".3">
+          <line x1="390" y1="34" x2="390" y2="20"/>
+          <line x1="390" y1="126" x2="390" y2="140"/>
+          <line x1="344" y1="80" x2="330" y2="80"/>
+          <line x1="436" y1="80" x2="450" y2="80"/>
+          <line x1="357" y1="47" x2="347" y2="37"/>
+          <line x1="423" y1="113" x2="433" y2="123"/>
+          <line x1="357" y1="113" x2="347" y2="123"/>
+          <line x1="423" y1="47" x2="433" y2="37"/>
+        </g>
+        <!-- Mastro -->
+        <rect x="218" y="130" width="5" height="210" rx="2" fill="#1A4A6B"/>
+        <!-- Vela grande com fórmula -->
+        <path d="M223 135 L340 190 L223 270 Z" fill="#1A4A6B" opacity=".82"/>
+        <text x="260" y="215" font-family="Georgia,serif" font-style="italic" font-size="18" fill="rgba(255,255,255,0.28)" transform="rotate(-5,260,215)">F=ma</text>
+        <!-- Vela pequena -->
+        <path d="M218 135 L110 185 L218 250 Z" fill="#2D7DAB" opacity=".7"/>
+        <text x="135" y="200" font-family="Georgia,serif" font-style="italic" font-size="13" fill="rgba(255,255,255,0.28)">λ·f</text>
+        <!-- Casco jangada (tábuas) -->
+        <rect x="165" y="334" width="152" height="18" rx="6" fill="#8B5E3C"/>
+        <rect x="155" y="348" width="172" height="14" rx="6" fill="#A0713F"/>
+        <rect x="145" y="358" width="192" height="12" rx="6" fill="#C97B3A"/>
+        <!-- Tábuas verticais da jangada -->
+        <line x1="200" y1="334" x2="200" y2="370" stroke="rgba(0,0,0,.12)" stroke-width="1.5"/>
+        <line x1="240" y1="334" x2="240" y2="370" stroke="rgba(0,0,0,.12)" stroke-width="1.5"/>
+        <line x1="280" y1="334" x2="280" y2="370" stroke="rgba(0,0,0,.12)" stroke-width="1.5"/>
+        <!-- Reflexo no mar -->
+        <line x1="221" y1="370" x2="215" y2="420" stroke="#1A4A6B" stroke-width="2" opacity=".2"/>
+        <!-- Seagull / gaivota estilizada -->
+        <path d="M80 200 Q90 193 100 200" stroke="#1A4A6B" stroke-width="2" fill="none" opacity=".4"/>
+        <path d="M65 215 Q78 208 90 215" stroke="#1A4A6B" stroke-width="1.5" fill="none" opacity=".3"/>
+      </svg>
+    </div>
+  </div>
+ 
+  <div class="hero-waves">
+    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="70">
+      <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#1A4A6B"/>
+    </svg>
+  </div>
+</section>
+ 
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div>
+    <div class="stat-num">48</div>
+    <div class="stat-label">Aulas disponíveis</div>
+  </div>
+  <div>
+    <div class="stat-num">120+</div>
+    <div class="stat-label">Exercícios</div>
+  </div>
+  <div>
+    <div class="stat-num">3</div>
+    <div class="stat-label">Séries do E.M.</div>
+  </div>
+  <div>
+    <div class="stat-num">94%</div>
+    <div class="stat-label">Aprovação ENEM</div>
+  </div>
+</div>
+ 
+<!-- ── AULAS ── -->
+<section class="section">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">Conteúdo em destaque</div>
+      <h2 class="section-title">Aulas recentes</h2>
+    </div>
+    <a href="#" class="section-link">Ver todas as aulas →</a>
+  </div>
+ 
+  <div class="cards-grid">
+    <!-- Card 1 -->
+    <div class="aula-card">
+      <div class="card-thumb mecanica">
+        <div class="thumb-icon">🌊</div>
+        <div class="thumb-formula">F=ma</div>
+        <div class="card-badge">Mecânica</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">1ª Série · Mecânica</div>
+        <div class="card-title">Leis de Newton e as correntes marinhas do CE</div>
+        <div class="card-desc">Como as forças que regem as correntes do litoral cearense ilustram as três leis de Newton.</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ 45 min · 3 exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Card 2 -->
+    <div class="aula-card">
+      <div class="card-thumb ondas">
+        <div class="thumb-icon">🔊</div>
+        <div class="thumb-formula">v=λf</div>
+        <div class="card-badge">Ondulatória</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">2ª Série · Ondulatória</div>
+        <div class="card-title">Propagação sonora — do baião às ondas mecânicas</div>
+        <div class="card-desc">A física por trás do som, usando instrumentos do forró como ponto de partida.</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ 50 min · 5 exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Card 3 -->
+    <div class="aula-card">
+      <div class="card-thumb termica">
+        <div class="thumb-icon">☀️</div>
+        <div class="thumb-formula">Q=mcΔT</div>
+        <div class="card-badge">Termodinâmica</div>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">2ª Série · Termodinâmica</div>
+        <div class="card-title">Calor, temperatura e o sol do sertão cearense</div>
+        <div class="card-desc">Por que o sertão é tão quente? Explorando condução, convecção e irradiação com exemplos reais.</div>
+        <div class="card-footer">
+          <span class="card-meta">⏱ 55 min · 4 exercícios</span>
+          <div class="card-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── ONDA DIVISÓRIA ── -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="50">
+    <path d="M0,25 C360,50 720,0 1080,25 C1260,37.5 1350,12 1440,25 L1440,50 L0,50 Z" fill="#0D2535"/>
+  </svg>
+</div>
+ 
+<!-- ── ATIVIDADES ── -->
+<section class="section-atividades">
+  <div class="ativ-bg-dots"></div>
+  <div class="section-header" style="position:relative;z-index:1">
+    <div>
+      <div class="section-eyebrow">Tarefas e provas</div>
+      <h2 class="section-title">Atividades abertas</h2>
+    </div>
+    <a href="#" class="section-link">Ver todas →</a>
+  </div>
+ 
+  <div class="ativ-grid">
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">📝</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Lista de exercícios</div>
+        <div class="ativ-titulo">Leis de Newton — Lista 3</div>
+        <div class="ativ-desc">10 questões de aplicação com contexto de engenharia naval e embarcações.</div>
+        <div class="ativ-prazo">📅 Entrega: 28 jun 2026</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">🧪</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Relatório de experimento</div>
+        <div class="ativ-titulo">Experimento: Pêndulo simples</div>
+        <div class="ativ-desc">Medição do período de oscilação e comparação com o modelo teórico.</div>
+        <div class="ativ-prazo">📅 Entrega: 02 jul 2026</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">📐</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Prova bimestral</div>
+        <div class="ativ-titulo">2º Bimestre — Ondulatória e Óptica</div>
+        <div class="ativ-desc">Conteúdos: ondas mecânicas, som, reflexão e refração da luz.</div>
+        <div class="ativ-prazo">📅 Data: 10 jul 2026</div>
+      </div>
+    </div>
+ 
+    <div class="ativ-card">
+      <div class="ativ-icon-wrap">🎯</div>
+      <div class="ativ-content">
+        <div class="ativ-tipo">Simulado ENEM</div>
+        <div class="ativ-titulo">Simulado — Física Geral (20 questões)</div>
+        <div class="ativ-desc">Questões no modelo ENEM cobrindo toda a ementa do 3º ano.</div>
+        <div class="ativ-prazo">📅 Disponível até: 15 jul 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ── ONDA DIVISÓRIA 2 ── -->
+<div class="wave-divider" style="background:#0D2535">
+  <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="50">
+    <path d="M0,0 C360,50 720,0 1080,50 C1260,75 1350,25 1440,0 L1440,50 L0,50 Z" fill="#F7F1E8"/>
+  </svg>
+</div>
+ 
+<!-- ── FAIXA CTA ── -->
+<div class="faixa-ceara">
+  <div>
+    <div class="faixa-titulo">Do sertão ao litoral,<br>a física está em tudo.</div>
+    <div class="faixa-sub">Acesse todo o material, acompanhe suas notas e tire dúvidas com o professor.</div>
+  </div>
+  <a href="#" class="faixa-btn">Criar conta gratuita</a>
+</div>
+ 
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <div class="footer-brand">Física<span>CE</span></div>
+    <div class="footer-copy">© 2026 · Prof. Carlos Sena · Fortaleza, CE</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="#">Aulas</a></li>
+    <li><a href="#">Atividades</a></li>
+    <li><a href="#">Material</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</footer>
 </body>
 </html>
