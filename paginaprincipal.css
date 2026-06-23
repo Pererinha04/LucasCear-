@@ -29,12 +29,17 @@
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 1.5rem 4rem;
     background: rgba(247, 241, 232, 0.92);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(35px);
     border-bottom: 1px solid rgba(201, 123, 58, 0.18);
+    border-radius: 40px;
   }
 
+
+
+
+  
 .nav-button{
     display: none;
     flex-direction: column;
@@ -140,6 +145,7 @@
  
   .nav-links {
     display: flex; gap: 2.2rem; list-style: none;
+
   }
   .nav-links a {
     text-decoration: none;
@@ -154,11 +160,15 @@
   .nav-btn {
     background: var(--oceano);
     color: #fff !important;
-    padding: .5rem 1.3rem;
-    border-radius: 2rem;
-    font-size: .85rem !important;
+    padding: .1rem 2.2rem;
+    border-radius: 5rem;
+    font-size: .88rem !important;
+    font-weight: 500;
     transition: background .2s !important;
+    border: none;
   }
+
+
   .nav-btn:hover { background: var(--agua) !important; color: #fff !important; }
  
   /* ── HERO ── */
@@ -541,6 +551,7 @@
     display: grid; grid-template-columns: 1fr auto;
     align-items: center; gap: 3rem;
     position: relative; overflow: hidden;
+    border-radius: 40px;
   }
   .faixa-ceara::after {
     content: '⚓';
@@ -622,3 +633,44 @@
     footer { grid-template-columns: 1fr; padding: 2.5rem 1.5rem; }
     .footer-links { flex-wrap: wrap; gap: 1rem; }
   }
+
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+
+  display: none;
+}
+
+.overlay.ativo {
+  display: flex;
+}
+
+.login-modal {
+     position: relative;
+     width: 350px;
+     padding: 30px;
+
+     background: var(--areia);
+     border-radius: 10px;
+
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+#fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
