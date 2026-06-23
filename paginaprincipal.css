@@ -1,5 +1,8 @@
  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ /*Remove margins e paddings padrão de todos os elementos*/
  
+
+ /*Essas cores definidas no root são para evitar repetições e ficam disponíveis em todo documento,assim não precisa repetir o códgo 30 vezes só utilizar var(--oceano)*/
   :root {
     --areia:     #F7F1E8;
     --ocre:      #C97B3A;
@@ -22,7 +25,7 @@
  
   /* ── NAV ── */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;/*Com o position a navbar fica no topo mesmo quando rola a página*/
     display: flex; align-items: center; justify-content: space-between;
     padding: 1rem 4rem;
     background: rgba(247, 241, 232, 0.92);
