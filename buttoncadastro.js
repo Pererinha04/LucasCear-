@@ -1,4 +1,4 @@
-document.getElementById("buttoncadastro").addEventListener("click", function () {
+document.getElementById("botaoCadastro").addEventListener("click", function () {
 
   const email = document.getElementById("email").value;
   const senha = document.getElementById("password").value;
@@ -9,6 +9,7 @@ document.getElementById("buttoncadastro").addEventListener("click", function () 
     return;
   }
 
+  console.log(localStorage.getItem("emails"));
   // Pega os emails já cadastrados
   const emails = JSON.parse(localStorage.getItem("emails")) || [];
 
@@ -29,7 +30,7 @@ document.getElementById("buttoncadastro").addEventListener("click", function () 
 
   // Redireciona após 1 segundo
   setTimeout(function () {
-    window.location.href = "index.html";
+    window.location.href = "";
   }, 1000);
 
 }); 
