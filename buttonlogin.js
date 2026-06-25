@@ -28,3 +28,18 @@ fechar2.addEventListener("click" , () => {
 
 })
 
+/* Button entrar menu mobile */
+
+const btEnt = document.getElementById("btEnt");
+const overlay = document.getElementById("overlay");
+const fechar = document.getElementById("fechar");
+
+btnAbrir.addEventListener("click", () =>{
+    overlay.classList.add("ativo");
+
+});
+
+fechar.addEventListener("click", () => {
+     overlay.classList.remove("ativo");
+
+});
