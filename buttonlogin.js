@@ -30,16 +30,17 @@ fechar2.addEventListener("click" , () => {
 
 /* Button entrar menu mobile */
 
+
 const btEnt = document.getElementById("btEnt");
-const overlay = document.getElementById("overlay");
-const fechar = document.getElementById("fechar");
+const overlay3 = document.getElementById("overlay3");
+const fechar3 = document.getElementById("fechar3");
 
-btnAbrir.addEventListener("click", () =>{
-    overlay.classList.add("ativo");
+btEnt.addEventListener("click" , () =>{
+     overlay3.classList.add("ativo");
 
-});
+})
 
-fechar.addEventListener("click", () => {
-     overlay.classList.remove("ativo");
+fechar3.addEventListener("click" , () => {
+   overlay3.classList.remove("ativo");
 
-});
+})
