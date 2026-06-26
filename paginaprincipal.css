@@ -107,7 +107,7 @@
 
 .nav-mobile a:hover { background: rgba(26,74,107,.06); color: var(--ocre); }
   .nav-mobile .nav-btn-mobile {
-     background: var(--oceano); color: #fff !important;
+    background: var(--oceano); color: #fff !important;
     text-align: center; margin-top: .6rem;
     border-radius: 2rem; padding: .85rem 1rem;
     font-weight: 600;
@@ -732,12 +732,9 @@ button:hover {
   margin-top: 15px;
   font-size: 14px;
   color: var(--texto);
+  
 }
 
-.register a {
-  color: var(--noite);
-  text-decoration: none;
-}
 
 
 @media (max-width:480px) {
