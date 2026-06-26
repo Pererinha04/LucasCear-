@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="paginaprincipal.css">
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="menumobile.css">
     <title>LucasCeará</title>
 </head>
 <body>
@@ -56,8 +57,9 @@
 
 </nav>
 
-<!--Menu Login-->
- <div class="overlay" id="overlay">
+<!--Menu login mobile-->
+
+ <div id="overlay3" class="overlay3">
 
    <div class="container">
 
@@ -81,9 +83,45 @@
 
        <p class="register">
           Não possui conta?
-        <a href="#">Cadastre-se já!</a>
+        <a href="#btCadastro">Cadastre-se já!</a>
 
        </p>
+
+      <span id="fechar3">X</span>
+
+</form>
+
+   </div>
+ </div>
+
+<!--Menu Login-->
+ <div id="overlay" class="overlay">
+
+   <div class="container">
+
+     <form class="login-box">
+       
+       <h2 id="Entrar">Login</h2>
+
+       <div class="input-group">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Digite seu email" required>
+       </div>
+
+       <div class="input-group">
+        <label>Senha</label>
+       <input id="password" type="password" placeholder="Digite sua senha" required>
+       </div>
+
+       <button id="botaoLogin" type="button">Entrar</button>
+
+       <p id="mensagem"></p>
+
+       <p class="register">
+          Não possui conta?
+        <a href="#btCadastro">Cadastre-se já!</a>
+
+       </p>       
 
       <span id="fechar">X</span>
 
@@ -364,7 +402,7 @@
 
        <p class="register">
           Possui conta?
-        <a href="#">Logue já!</a>
+        <a href="index.html">Logue já!</a>
 
        </p>
 
