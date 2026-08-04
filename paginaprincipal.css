@@ -171,9 +171,22 @@
 
   .nav-btn:hover { background: var(--agua) !important; color: #fff !important; }
  
+
+ /*Jangada principal*/
+
+ #jangada {
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: 600px;
+ }
+
+
+
+
   /* ── HERO ── */
   .hero {
-    min-height: 100vh;
+    min-height: 20vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -266,18 +279,7 @@
   .btn-secondary:hover {
     background: var(--oceano); color: #fff;
   }
- 
-  /* ── JANGADA SVG HERO ── */
-  .hero-visual {
-    position: relative; z-index: 2;
-    display: flex; justify-content: center; align-items: center;
-  }
- 
-  .jangada-wrapper {
-    position: relative;
-    width: 480px; height: 460px;
-  }
- 
+
   /* Fórmulas flutuantes */
   .formula-tag {
     position: absolute;
